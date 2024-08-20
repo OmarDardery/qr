@@ -31,7 +31,7 @@ input[type="submit"]{
     top: 0;
 }
 .topPart{
-    height: 200px;
+    height: 300px;
 }
 .desc{
     align-self: flex-end;
