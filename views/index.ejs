@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR-Code Generator</title>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Dardery's Qr-Code Generator</h1>
+            <h2 class=".desc">(a backend(Node.js, Express, Npm and EJS) project by Omar Dardery)</h2>
+        </div>
+        <div id="hehehehe">
+            <div class="image">
+                <% if(locals.qrImage){ %>
+                    <img src="<%= qrImage %>" class="hehe">
+                <% } else { %>
+                    <img src="/one.png" class="hehe">
+                <% } %>
+            </div>
+            <form action="/qr" method="post">
+                <input type="text" name="url" placeholder="Enter URL...." required>
+                <input type="submit" value="Generate">
+            </form> 
+        </div>
+    </body>
+</html>
