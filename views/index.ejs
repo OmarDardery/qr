@@ -12,18 +12,17 @@
             <h1>Dardery's Qr-Code Generator</h1>
             <h2 class=".desc">(a Node.js, Express, Npm and EJS project by Omar Dardery)</h2>
         </div>
-        <div id="hehehehe">
-            <div class="image">
-                <% if(locals.qrImage){ %>
-                    <img src="<%= qrImage %>" class="hehe" style="width: 50%;">
-                <% } else { %>
-                    <img src="/one.png" class="hehe" style="width: 50%;">
-                <% } %>
-            </div>
-            <form action="/qr" method="post">
-                <input type="text" name="url" placeholder="Enter URL...." required>
-                <input type="submit" value="Generate">
-            </form> 
+        <div class="topPart">
+
         </div>
+            <% if(locals.qrImage){ %>
+                <img src="<%= qrImage %>" class="hehe" style="width: 50%;">
+            <% } else { %>
+                <img src="/one.png" class="hehe" style="width: 50%;">
+            <% } %>
+        <form action="/qr" method="post">
+            <input type="text" name="url" placeholder="Enter URL...." required>
+            <input type="submit" value="Generate">
+        </form> 
     </body>
 </html>

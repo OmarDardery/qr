@@ -1,12 +1,8 @@
 import express from 'express';
 import qr from 'qr-image';
 
-
-
-
 const app = express();
 const port = 3000;
-
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
